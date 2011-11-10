@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="db_drop_table_t_user">drop table t_user;</string>
+    <string name="db_create_table_t_user">
+        CREATE TABLE T_USER (
+        	ID_USER INTEGER PRIMARY KEY, 
+        	FIRST_NAME TEXT, 
+        	LAST_NAME TEXT);
+    </string>
+    <string name="db_user_findAllUsers">
+        select * from t_user
+    </string>
+    <string name="db_user_insertUser">
+        insert into t_user (
+        	id_user, 
+        	first_name, 
+        	last_name
+        ) values (
+        	#user.idUser#, 
+        	#user.firstName#, 
+        	#user.lastName#
+        )
+    </string>
+
+</resources>
